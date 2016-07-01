@@ -43,13 +43,19 @@ Requires Formidable to be installed and activated first!
 * yandex.com
 * gmx.net
 * gmx.com
+* verizon.net
+* bellsouth.net
+* frontier.net
+* att.net
 
 
 
 == Changelog ==
 
+= 1.0.1 =
+Added new services and a filter for the services list.
+
 = 1.0.0 =
 * First version.
 
 == Upgrade Notice ==
-

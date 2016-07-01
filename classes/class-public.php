@@ -69,7 +69,30 @@ class Formidable_No_Webmails_Public {
 
 		if ( 'email' !== $posted_field->type ) { return $errors; }
 
-		$services = array( 'gmail.com', 'yahoo.com', 'hotmail.com', 'earthlink.com', 'live.com', 'icloud.com', 'me.com', 'mac.com', 'juno.com', 'aol.com', 'hushmail.com', 'outlook.com', 'protonmail.com', 'zoho.com', 'yandex.com', 'gmx.net', 'gmx.com' );
+		$services[] = 'att.net';
+		$services[] = 'aol.com';
+		$services[] = 'bellsouth.net';
+		$services[] = 'comcast.net';
+		$services[] = 'earthlink.com';
+		$services[] = 'frontier.net';
+		$services[] = 'gmail.com';
+		$services[] = 'gmx.com';
+		$services[] = 'gmx.net';
+		$services[] = 'hotmail.com';
+		$services[] = 'hushmail.com';
+		$services[] = 'icloud.com';
+		$services[] = 'juno.com';
+		$services[] = 'live.com';
+		$services[] = 'mac.com';
+		$services[] = 'me.com';
+		$services[] = 'outlook.com';
+		$services[] = 'protonmail.com';
+		$services[] = 'verizon.net';
+		$services[] = 'yandex.com';
+		$services[] = 'yahoo.com';
+		$services[] = 'zoho.com';
+
+		$services = apply_filters( 'formidable-no-webmails-services', $services );
 
 		foreach ( $services as $service ) {
 

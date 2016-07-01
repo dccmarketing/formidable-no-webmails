@@ -69,7 +69,7 @@ class Formidable_No_Webmails {
 	public function __construct() {
 
 		$this->plugin_name = 'formidable-no-webmails';
-		$this->version = '1.0.0';
+		$this->version = '1.0.1';
 
 		$this->load_dependencies();
 		$this->set_locale();
